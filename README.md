@@ -21,10 +21,19 @@ Add to your project using `npm i -D jest-test-performance`
 
 ## Usage
 
+First you need to import the package during the jest setup.
+
 ```javascript
-import getPerformanceScore from 'jest-test-performance';
+"jest": {
+  "setupFilesAfterEnv": ["jest-test-performance"]
+}
+```
 
-const expectedPerformanceInMs = await getPerformanceScore(() => 1 + 1);
+And then you can use the condition during assertions.
 
-// returns the expected number of ms that the function will take to run on an average machine
+```javascript
+it('should run faster than 100ms', async () => {
+  const dummyFunction = () => {};
+  await expect(dummyFunction).toBeFasterThan(100);
+});
 ```
