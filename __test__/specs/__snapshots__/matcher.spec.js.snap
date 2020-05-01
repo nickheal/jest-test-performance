@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`.toBeFasterThan fails when not given a function () 1`] = `
-"
-  [2mexpect([22m[31mreceived[39m[2m).toBeFasterThan()[22m
-  Function '() => {}' ran slower than expected:
-  Expected: [32m0.01[39m
-Received: [31m12.38694217169907[39m
-"
-`;
-
-exports[`.toBeFasterThan fails when not given a function () 2`] = `" is not a function"`;
+exports[`.toBeFasterThan fails when not given a function () 1`] = `" is not a function"`;
 
 exports[`.toBeFasterThan fails when not given a function ([object Object]) 1`] = `"[object Object] is not a function"`;
 
