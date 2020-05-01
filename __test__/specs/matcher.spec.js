@@ -9,7 +9,7 @@ describe('.toBeFasterThan', () => {
   });
 
   it('should fail if the function is slower than the target time', () => {
-    expect(async () => expect(() => {}).toBeFasterThan(0.01)).rejects.toThrowErrorMatchingSnapshot();
+    expect(async () => expect(() => {}).toBeFasterThan(0.01)).rejects.toThrow();
   });
 
   useMultiPossibility(([arg]) => {
