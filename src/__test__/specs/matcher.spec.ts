@@ -1,5 +1,5 @@
 import useMultiPossibility from 'use-multi-possibility';
-import matcher from '../../src/matcher';
+import matcher from '../../matcher';
 
 expect.extend(matcher);
 
@@ -12,7 +12,7 @@ describe('.toBeFasterThan', () => {
     expect(async () => expect(() => {}).toBeFasterThan(0.01)).rejects.toThrow();
   });
 
-  useMultiPossibility(([arg]) => {
+  useMultiPossibility(([arg]: any[]) => {
     it(`fails when not given a function (${arg})`, () => {
       expect(async () => expect(arg).toBeFasterThan(1)).rejects.toThrowErrorMatchingSnapshot();
     });
