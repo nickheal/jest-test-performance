@@ -1,6 +1,6 @@
 {
   "name": "jest-test-performance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jest extenstion to simplify testing performance",
   "keywords": [
     "jest",
